@@ -1,0 +1,22 @@
+{
+  "scenario": "home",
+  "mode": "light",
+  "status": "success",
+  "runtime_ms": 7829,
+  "evidence": {
+    "screenshots": [
+      ".sandbox/outputs/home_step_2.png"
+    ],
+    "api_intercepted": false
+  },
+  "steps": [
+    "navigate:/sandbox-site/",
+    "sleep:5000",
+    "screenshot"
+  ],
+  "mocks": [],
+  "diagnostics": {
+    "console": [],
+    "page_errors": []
+  }
+}

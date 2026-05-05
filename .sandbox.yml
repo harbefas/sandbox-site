@@ -1,0 +1,26 @@
+version: 1
+stack: react
+output_dir: .sandbox/outputs
+
+dev:
+  command: npm run dev
+  port: 5173
+  ready_pattern: "Local:"
+
+api:
+  base_url: http://localhost:5173
+  mock_default: false
+
+browser:
+  backend: playwright
+  headless: true
+  viewport: 1280x720
+
+scenarios:
+  home:
+    steps:
+      - navigate:/sandbox-site/
+      - sleep:5000
+      - screenshot
+    capture:
+      - screenshot
